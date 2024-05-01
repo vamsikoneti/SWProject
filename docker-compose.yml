@@ -22,11 +22,11 @@ services:
     depends_on:
       - db
     environment:
-      - DB_NAME=dbname
-      - DB_USER=user
-      - DB_PASSWORD=password
-      - DB_HOST=db
-      - DB_PORT=5432
+      DB_NAME: dbname
+      DB_USER: user
+      DB_PASSWORD: password
+      DB_HOST: db
+      DB_PORT: 5432
 
   frontend:
     build: ./Intelliquest_fe
@@ -34,17 +34,6 @@ services:
       - "3000:80"
     depends_on:
       - backend
-  services:
-    web:
-      build: .
-      command: python manage.py runserver 0.0.0.0:8000
-      volumes:
-        - .:/code
-      ports:
-        - "8000:8000"
-      environment:
-        - DEBUG=0
 
-
- volumes:
-   postgres_data:
+volumes:
+  postgres_data:
