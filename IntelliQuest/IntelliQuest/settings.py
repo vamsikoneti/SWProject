@@ -12,7 +12,7 @@ SECRET_KEY = 'django-insecure-xmj@=tf4!60t9ph2%33zdh&c$&3c#gh-6)!64zwp02yzjaarf$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 AUTH_USER_MODEL = 'IntelliQuest_v1.CustomUser' 
-ALLOWED_HOSTS = ['localhost', '0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '127.0.0.1', '165.227.74.112']
 
 # Application definition
 INSTALLED_APPS = [
